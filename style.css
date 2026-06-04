@@ -1,7 +1,180 @@
 /* ══════════════════════════════════════════
-   PORTO-NOVO — HOGBONOU
+   PORTO-NOVO OUANDO — HOGBONOU
    style.css — Design Système Complet
 ══════════════════════════════════════════ */
+
+/* ── Nav Monogram ── */
+.logo-monogram {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--or);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-cinzel);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--or);
+  flex-shrink: 0;
+}
+
+/* ── Footer Monogram ── */
+.footer-monogram {
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  border: 2px solid var(--or);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-family: var(--font-cinzel);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--or);
+}
+
+/* ── Info Card Roman Numeral ── */
+.info-icon-letter {
+  font-family: var(--font-cinzel);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--blanc);
+  background: linear-gradient(135deg, var(--terracotta), var(--or));
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 16px;
+  letter-spacing: 0.05em;
+}
+.info-card:nth-child(3) .info-icon-letter {
+  background: linear-gradient(135deg, var(--foret-douce), var(--jade));
+}
+.info-card:nth-child(4) .info-icon-letter {
+  background: linear-gradient(135deg, var(--rouge-doux), var(--rouge-vodoun));
+}
+
+/* ── Spirit Marker (✦ ◉) ── */
+.spirit-marker {
+  font-size: 2rem;
+  color: var(--or);
+  margin-bottom: 10px;
+  display: block;
+  line-height: 1;
+}
+.vodoun-marker { color: var(--creme); }
+
+/* ── Spirit List (replaces spirit-items) ── */
+.spirit-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.spirit-list li {
+  padding-left: 20px;
+  position: relative;
+}
+.spirit-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: var(--or);
+  font-size: 0.8rem;
+}
+.spirit-vodoun .spirit-list li::before { color: var(--or-clair); }
+.spirit-list li strong {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--or);
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+.spirit-vodoun .spirit-list li strong { color: var(--or-clair); }
+.spirit-list li p {
+  font-size: 0.85rem;
+  color: rgba(245,232,208,0.7);
+  line-height: 1.6;
+}
+
+/* ── Tree Attr List ── */
+.tree-attr-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.tree-attr-list li {
+  padding-left: 22px;
+  position: relative;
+}
+.tree-attr-list li::before {
+  content: '◆';
+  position: absolute;
+  left: 0; top: 3px;
+  color: var(--jade);
+  font-size: 0.6rem;
+}
+.colatier-list li::before { color: var(--or); }
+.tree-attr-list li strong {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--jade);
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+.colatier-list li strong { color: var(--or); }
+.tree-attr-list li p {
+  font-size: 0.83rem;
+  color: rgba(245,232,208,0.65);
+  line-height: 1.6;
+}
+
+/* ── JPN Fact List ── */
+.jpn-fact-list {
+  list-style: none;
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.jpn-fact-list li {
+  font-size: 0.9rem;
+  color: rgba(245,232,208,0.75);
+  padding-left: 20px;
+  position: relative;
+}
+.jpn-fact-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--jade);
+  font-weight: 700;
+}
+.jpn-fact-list li strong { color: var(--jade); }
+
+/* ── Biodiv Marker ── */
+.biodiv-marker {
+  font-size: 0.7rem;
+  color: var(--jade);
+  flex-shrink: 0;
+  margin-top: 6px;
+  width: 20px;
+  text-align: center;
+}
+
+/* ── Pillar Icon as text symbol ── */
+.pillar-icon {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  background: rgba(212,160,58,0.1);
+  border: 2px solid rgba(212,160,58,0.3);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.6rem;
+  font-family: var(--font-cinzel);
+  color: var(--or);
+  transition: background 0.3s, border-color 0.3s, transform 0.3s var(--ease-bounce);
+}
+.pillar:hover .pillar-icon {
+  background: rgba(212,160,58,0.2);
+  border-color: var(--or);
+  transform: scale(1.1) translateY(-4px);
+}
 
 /* ── Google Fonts & Reset ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -441,7 +614,7 @@ a { text-decoration: none; color: inherit; }
 .section-forest .section-lead { color: rgba(245,232,208,0.75); }
 
 /* ══════════════════════════════════════════
-   SECTION 1 — PORTO-NOVO : INFO CARDS
+   SECTION 1 — Porto-Ouando : INFO CARDS
 ══════════════════════════════════════════ */
 .info-grid {
   display: grid;
@@ -1279,4 +1452,349 @@ blockquote {
   .jpn-history-card { padding: 32px 28px; }
   .tree-info { padding: 24px 28px 32px; }
   .conclusion-inner { padding: 0 4px; }
+}
+
+/* ══════════════════════════════════════════
+   PHOTO GALLERY — JPN
+══════════════════════════════════════════ */
+.photo-gallery {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 16px;
+  margin-bottom: 52px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.photo-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  aspect-ratio: 4/3;
+  cursor: pointer;
+}
+.photo-item.photo-large { aspect-ratio: 16/10; }
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s var(--ease), filter 0.4s;
+  filter: brightness(0.88) saturate(1.15);
+}
+.photo-item:hover img {
+  transform: scale(1.07);
+  filter: brightness(1) saturate(1.25);
+}
+
+.photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(13,27,42,0.82) 0%,
+    rgba(26,60,46,0.2) 45%,
+    transparent 70%
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.4s var(--ease);
+}
+.photo-item:hover .photo-overlay { opacity: 1; }
+
+.photo-caption {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--creme);
+  background: rgba(13,27,42,0.55);
+  backdrop-filter: blur(8px);
+  padding: 8px 14px;
+  border-radius: 100px;
+  border: 1px solid rgba(82,183,136,0.3);
+  transform: translateY(8px);
+  transition: transform 0.4s var(--ease);
+}
+.photo-item:hover .photo-caption { transform: translateY(0); }
+
+/* ══════════════════════════════════════════
+   TREE PHOTO CARD — IROKO
+══════════════════════════════════════════ */
+.tree-photo-wrap {
+  position: relative;
+  height: 320px;
+  overflow: hidden;
+}
+.tree-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  transition: transform 0.7s var(--ease), filter 0.4s;
+  filter: brightness(0.82) saturate(1.1);
+}
+.tree-card:hover .tree-photo {
+  transform: scale(1.05);
+  filter: brightness(0.92) saturate(1.2);
+}
+
+/* Dark gradient fade at bottom */
+.tree-photo-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 55%;
+  background: linear-gradient(to top, rgba(26,60,46,0.95) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+/* Inset panel (panneau IROKO) */
+.tree-photo-overlay {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  z-index: 2;
+  width: 130px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid rgba(82,183,136,0.55);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  transform: rotate(1.5deg);
+  transition: transform 0.4s var(--ease-bounce), box-shadow 0.3s;
+}
+.tree-card:hover .tree-photo-overlay {
+  transform: rotate(0deg) scale(1.06);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.6);
+}
+.tree-photo-inset {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Badge label on photo */
+.tree-photo-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 16px;
+  z-index: 2;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--jade);
+  background: rgba(13,27,42,0.75);
+  backdrop-filter: blur(8px);
+  padding: 7px 14px;
+  border-radius: 100px;
+  border: 1px solid rgba(82,183,136,0.35);
+}
+
+/* Responsive photo gallery */
+@media (max-width: 768px) {
+  .photo-gallery {
+    grid-template-columns: 1fr;
+  }
+  .photo-item.photo-large { aspect-ratio: 4/3; }
+  .photo-overlay { opacity: 1; }
+  .photo-caption { transform: translateY(0); }
+  .tree-photo-wrap { height: 260px; }
+  .tree-photo-overlay { width: 100px; }
+}
+
+@media (max-width: 480px) {
+  .tree-photo-wrap { height: 220px; }
+  .tree-photo-overlay { display: none; }
+}
+
+/* ══════════════════════════════════════════
+   SPIRIT PHOTO — FÂ PANEL
+══════════════════════════════════════════ */
+.spirit-photo-wrap {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+}
+.spirit-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  transition: transform 0.7s var(--ease), filter 0.4s;
+  filter: brightness(0.78) saturate(1.2);
+}
+.spirit-panel:hover .spirit-photo {
+  transform: scale(1.05);
+  filter: brightness(0.9) saturate(1.3);
+}
+.spirit-photo-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 50%;
+  background: linear-gradient(to top, rgba(13,27,42,0.95) 0%, transparent 100%);
+  pointer-events: none;
+}
+.spirit-photo-caption {
+  position: absolute;
+  bottom: 12px;
+  left: 0; right: 0;
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--or);
+  z-index: 2;
+  text-transform: uppercase;
+}
+/* Remove top padding from header when photo is above */
+.spirit-fa .spirit-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* ══════════════════════════════════════════
+   VODOUN GALLERY
+══════════════════════════════════════════ */
+.vodoun-gallery {
+  margin: 40px 0 32px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(139,10,10,0.3);
+  background: rgba(13,27,42,0.5);
+}
+.vodoun-gallery-header {
+  padding: 32px 40px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.vodoun-gallery-header h3 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--or);
+  margin-bottom: 6px;
+}
+.vodoun-gallery-header p {
+  font-size: 0.88rem;
+  color: rgba(245,232,208,0.55);
+  font-style: italic;
+}
+.vodoun-gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 300px;
+}
+
+/* Photo items */
+.vodoun-photo-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.vodoun-photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  min-height: 300px;
+  transition: transform 0.6s var(--ease), filter 0.4s;
+  filter: brightness(0.75) saturate(1.15);
+}
+.vodoun-photo-item:hover img {
+  transform: scale(1.08);
+  filter: brightness(0.9) saturate(1.3);
+}
+.vodoun-photo-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(13,27,42,0.88) 0%, transparent 55%);
+  pointer-events: none;
+}
+.vodoun-photo-info {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 20px 18px;
+  z-index: 2;
+  transform: translateY(4px);
+  transition: transform 0.3s var(--ease);
+}
+.vodoun-photo-item:hover .vodoun-photo-info { transform: translateY(0); }
+.vodoun-photo-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--or);
+  border: 1px solid rgba(212,160,58,0.4);
+  padding: 4px 10px;
+  border-radius: 100px;
+  margin-bottom: 6px;
+}
+.vodoun-photo-info p {
+  font-size: 0.8rem;
+  color: rgba(245,232,208,0.7);
+  line-height: 1.4;
+}
+
+/* Text item (3rd slot) */
+.vodoun-text-item {
+  display: flex;
+  align-items: center;
+  padding: 32px 30px;
+  background: linear-gradient(160deg, rgba(139,10,10,0.25) 0%, rgba(13,27,42,0.6) 100%);
+  border-left: 1px solid rgba(139,10,10,0.25);
+}
+.vt-num {
+  display: block;
+  font-family: var(--font-cinzel);
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgba(212,160,58,0.15);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.vodoun-text-content h4 {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--creme);
+  margin-bottom: 10px;
+}
+.vodoun-text-content p {
+  font-size: 0.88rem;
+  color: rgba(245,232,208,0.65);
+  line-height: 1.7;
+}
+.vt-divider {
+  width: 36px; height: 1px;
+  background: rgba(212,160,58,0.4);
+  margin: 16px 0;
+}
+.vt-quote {
+  font-style: italic !important;
+  color: var(--or) !important;
+  font-size: 0.82rem !important;
+}
+
+/* ══════════════════════════════════════════
+   COLATIER PHOTO BADGE VARIANT
+══════════════════════════════════════════ */
+.colatier-wrap .tree-photo-overlay { border-color: rgba(212,160,58,0.55); }
+.orange-badge { color: var(--or) !important; border-color: rgba(212,160,58,0.45) !important; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .vodoun-gallery-grid { grid-template-columns: 1fr 1fr; }
+  .vodoun-text-item { grid-column: 1 / -1; border-left: none; border-top: 1px solid rgba(139,10,10,0.25); }
+  .spirit-photo-wrap { height: 200px; }
+}
+@media (max-width: 600px) {
+  .vodoun-gallery-grid { grid-template-columns: 1fr; }
+  .vodoun-photo-item img { min-height: 220px; }
+  .vodoun-gallery-header { padding: 24px 20px 16px; }
 }

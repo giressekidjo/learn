@@ -1,5 +1,5 @@
 /* ═══════════════════════════
-   main.js — Porto-Novo Site
+   main.js — Porto-Ouando Site
 ═══════════════════════════ */
 
 'use strict';
