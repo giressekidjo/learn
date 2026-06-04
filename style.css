@@ -3,29 +3,56 @@
    style.css — Design Système Complet
 ══════════════════════════════════════════ */
 
-/* ── Nav Monogram ── */
-.logo-monogram {
-  width: 32px; height: 32px;
+/* ── Nav Logo Image ── */
+.nav-logo-img {
+  height: 44px;
+  width: 44px;
+  object-fit: contain;
   border-radius: 50%;
-  border: 2px solid var(--or);
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-cinzel);
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--or);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(212,160,58,0.3);
   flex-shrink: 0;
+  transition: transform 0.3s var(--ease-bounce), border-color 0.3s;
+}
+.nav-logo:hover .nav-logo-img {
+  transform: scale(1.08) rotate(3deg);
+  border-color: var(--or);
 }
 
-/* ── Footer Monogram ── */
-.footer-monogram {
-  width: 34px; height: 34px;
+/* ── Footer Logo Image ── */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+.footer-logo-img {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
   border-radius: 50%;
-  border: 2px solid var(--or);
-  display: inline-flex; align-items: center; justify-content: center;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(212,160,58,0.25);
+  flex-shrink: 0;
+}
+.footer-logo-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 3px;
+}
+.footer-logo-name {
   font-family: var(--font-cinzel);
-  font-size: 0.9rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 600;
   color: var(--or);
+  letter-spacing: 0.06em;
+}
+.footer-logo-sub {
+  font-size: 0.75rem;
+  color: rgba(245,232,208,0.45);
+  letter-spacing: 0.08em;
 }
 
 /* ── Info Card Roman Numeral ── */
