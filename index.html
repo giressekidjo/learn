@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Porto-Novo — Hogbonou | Village de l'Artisan & Jardin des Plantes</title>
+  <meta name="description" content="Découvrez Porto-Novo (Hogbonou), cœur battant de l'identité béninoise : Village de l'Artisan, spiritualité Fâ & Vodoun, et le Jardin des Plantes et de la Nature." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Lato:wght@300;400;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon">🏛</span>
+        <span class="logo-text">Hogbonou</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#porto-novo">Porto-Novo</a></li>
+        <li><a href="#artisan">L'Artisan</a></li>
+        <li><a href="#spiritualite">Fâ & Vodoun</a></li>
+        <li><a href="#jpn">Jardin JPN</a></li>
+        <li><a href="#arbres">Arbres Sacrés</a></li>
+        <li><a href="#conclusion" class="nav-cta">Conclusion</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up">République du Bénin · Hogbonou</p>
+      <h1 class="hero-title reveal-up delay-1">
+        <span class="title-line">Porto-Novo</span>
+        <span class="title-accent">Entre Traditions Ancestrales<br>et Écrin de Nature</span>
+      </h1>
+      <p class="hero-subtitle reveal-up delay-2">
+        Village de l'Artisan · Fâ & Vodoun · Jardin des Plantes et de la Nature
+      </p>
+      <div class="hero-tags reveal-up delay-3">
+        <span class="tag">⚒ Forge</span>
+        <span class="tag">🏺 Poterie</span>
+        <span class="tag">🪵 Bois</span>
+        <span class="tag">🔮 Vodoun</span>
+        <span class="tag">🌿 JPN</span>
+      </div>
+      <a href="#porto-novo" class="hero-btn reveal-up delay-4">
+        Découvrir <span class="btn-arrow">↓</span>
+      </a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Défiler</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 1 — PORTO-NOVO
+  ══════════════════════════════════════ -->
+  <section id="porto-novo" class="section">
+    <div class="section-bg-pattern"></div>
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">🏛 Introduction</span>
+        <h2 class="section-title">Porto-Novo<br><em>Hogbonou</em></h2>
+        <div class="title-divider"></div>
+        <p class="section-lead">
+          Ville d'histoire, ville de culture — fondée au XVII<sup>e</sup> siècle par le roi Dê-Gbêlin,
+          Porto-Novo est le berceau d'une civilisation millénaire où coexistent royauté, artisanat et sacré.
+        </p>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card reveal-left">
+          <div class="info-card-accent"></div>
+          <div class="info-icon">📍</div>
+          <h3>Capitale Constitutionnelle</h3>
+          <p>Siège de l'Assemblée Nationale du Bénin, Porto-Novo est le centre politique et culturel du pays.</p>
+        </div>
+        <div class="info-card reveal-up delay-1">
+          <div class="info-card-accent"></div>
+          <div class="info-icon">🏺</div>
+          <h3>Artisanat Millénaire</h3>
+          <p>Forge, poterie et sculpture sur bois — des savoir-faire transmis de génération en génération.</p>
+        </div>
+        <div class="info-card reveal-up delay-2">
+          <div class="info-card-accent"></div>
+          <div class="info-icon">🌿</div>
+          <h3>Nature Sacrée</h3>
+          <p>La forêt du Migan (Miganzun), devenue Jardin des Plantes, sanctuaire de biodiversité tropicale.</p>
+        </div>
+        <div class="info-card reveal-right delay-3">
+          <div class="info-card-accent"></div>
+          <div class="info-icon">🔮</div>
+          <h3>Traditions Vivantes</h3>
+          <p>Le Vodoun et le Fâ, philosophies cosmiques inscrites au cœur de chaque geste quotidien.</p>
+        </div>
+      </div>
+
+      <div class="quote-block reveal-up">
+        <div class="quote-mark">"</div>
+        <blockquote>
+          Hogbonou — « le lieu de la grande maison » — où chaque pierre, chaque arbre
+          et chaque atelier raconte une histoire qui appartient à toute l'humanité.
+        </blockquote>
+        <div class="quote-source">— Tradition orale de Porto-Novo</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 2 — VILLAGE DE L'ARTISAN
+  ══════════════════════════════════════ -->
+  <section id="artisan" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">⚒ Patrimoine Vivant</span>
+        <h2 class="section-title">Le Village<br><em>de l'Artisan</em></h2>
+        <div class="title-divider gold"></div>
+        <p class="section-lead">
+          Un espace vivant où les gestes ancestraux se perpétuent — chaque atelier est un sanctuaire
+          de mémoire collective, chaque objet une prière silencieuse.
+        </p>
+      </div>
+
+      <div class="craft-showcase">
+        <!-- Forge -->
+        <div class="craft-card reveal-up" id="craft-forge">
+          <div class="craft-visual">
+            <div class="craft-icon-wrap">
+              <span class="craft-emoji">🔨</span>
+              <div class="craft-glow"></div>
+            </div>
+          </div>
+          <div class="craft-content">
+            <span class="craft-number">01</span>
+            <h3 class="craft-title">La Forge</h3>
+            <p class="craft-subtitle">Maîtres du Feu et du Métal</p>
+            <div class="craft-divider"></div>
+            <p class="craft-text">
+              Les forgerons de Porto-Novo perpétuent un art vieux de plusieurs siècles.
+              Couteaux rituels, outils agricoles, bijoux en bronze — chaque pièce porte
+              l'empreinte du sacré et du quotidien. Le feu transforme le métal brut
+              en objet chargé de sens et de puissance spirituelle.
+            </p>
+            <ul class="craft-list">
+              <li>Couteaux et outils rituels Vodoun</li>
+              <li>Bijoux et parures royales en bronze</li>
+              <li>Instruments agricoles transmis par héritage</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Poterie -->
+        <div class="craft-card craft-card-alt reveal-up delay-1" id="craft-poterie">
+          <div class="craft-content">
+            <span class="craft-number">02</span>
+            <h3 class="craft-title">La Poterie</h3>
+            <p class="craft-subtitle">Argile et Mémoire Vivante</p>
+            <div class="craft-divider"></div>
+            <p class="craft-text">
+              La potière façonne la terre comme ses ancêtres l'ont fait avant elle.
+              Jarres à eau, récipients rituels Vodoun, ustensiles du quotidien —
+              la terre parle ici un langage universel qui transcende le temps
+              et les frontières.
+            </p>
+            <ul class="craft-list">
+              <li>Jarres et amphores traditionnelles</li>
+              <li>Récipients sacrés pour les libations</li>
+              <li>Figurines votives et décorations</li>
+            </ul>
+          </div>
+          <div class="craft-visual">
+            <div class="craft-icon-wrap">
+              <span class="craft-emoji">🏺</span>
+              <div class="craft-glow terracotta"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bois -->
+        <div class="craft-card reveal-up delay-2" id="craft-bois">
+          <div class="craft-visual">
+            <div class="craft-icon-wrap">
+              <span class="craft-emoji">🪵</span>
+              <div class="craft-glow green"></div>
+            </div>
+          </div>
+          <div class="craft-content">
+            <span class="craft-number">03</span>
+            <h3 class="craft-title">La Sculpture sur Bois</h3>
+            <p class="craft-subtitle">Bois et Spiritualité</p>
+            <div class="craft-divider"></div>
+            <p class="craft-text">
+              Les sculpteurs donnent vie au bois sacré : fétiches, masques cérémoniels,
+              mobilier royal. Chaque œuvre est une prière silencieuse adressée aux forces
+              invisibles — une communion entre l'artisan, la nature et le divin.
+            </p>
+            <ul class="craft-list">
+              <li>Masques cérémoniels et fétiches sacrés</li>
+              <li>Mobilier et trônes royaux sculptés</li>
+              <li>Statuettes des divinités Vodoun</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rôle conservateur -->
+      <div class="heritage-banner reveal-up">
+        <div class="heritage-inner">
+          <div class="heritage-icon">📚</div>
+          <div class="heritage-text">
+            <h3>Conservateur du Patrimoine</h3>
+            <p>
+              Le Village de l'Artisan est le coffre-fort vivant de la civilisation béninoise —
+              chaque coup de marteau, chaque tour de potier, chaque entaille dans le bois est
+              un acte de résistance culturelle et de transmission intergénérationnelle.
+            </p>
+          </div>
+          <div class="heritage-stats">
+            <div class="stat-item">
+              <span class="stat-num" data-target="300">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Artisans actifs</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="17">0</span><sup>e</sup>
+              <span class="stat-label">Siècle d'existence</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="3">0</span>
+              <span class="stat-label">Savoir-faire majeurs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 3 — SPIRITUALITÉ FÂ & VODOUN
+  ══════════════════════════════════════ -->
+  <section id="spiritualite" class="section section-mystic">
+    <div class="mystic-overlay"></div>
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">🔮 Spiritualité</span>
+        <h2 class="section-title">Fâ & Vodoun</h2>
+        <div class="title-divider red"></div>
+        <p class="section-lead">
+          À Porto-Novo, le sacré n'est pas confiné aux temples — il vit dans les rues,
+          les ateliers, les marchés. Le Fâ et le Vodoun sont l'âme invisible de la ville.
+        </p>
+      </div>
+
+      <div class="spirit-split">
+        <!-- Fâ -->
+        <div class="spirit-panel spirit-fa reveal-left">
+          <div class="spirit-header">
+            <div class="spirit-symbol">🌟</div>
+            <h3>Le Fâ</h3>
+            <p class="spirit-subtitle">Oracle de Sagesse et de Destinée</p>
+          </div>
+          <div class="spirit-body">
+            <p>
+              Système divinatoire d'origine yoruba-fon, le Fâ est une véritable
+              science du destin. Ses <strong>256 signes (Odù)</strong> guident les artisans
+              dans le choix des matériaux, des couleurs et des formes sacrées.
+            </p>
+            <div class="spirit-items">
+              <div class="spirit-item">
+                <span class="si-icon">🎯</span>
+                <div>
+                  <strong>Dans l'Artisanat</strong>
+                  <p>Chaque création est bénie par le Fâ. L'artisan consulte l'oracle avant d'entreprendre une œuvre importante.</p>
+                </div>
+              </div>
+              <div class="spirit-item">
+                <span class="si-icon">🔯</span>
+                <div>
+                  <strong>Les 256 Odù</strong>
+                  <p>Chaque signe correspond à des objets, couleurs et formes précises que l'artisan doit respecter.</p>
+                </div>
+              </div>
+              <div class="spirit-item">
+                <span class="si-icon">🌍</span>
+                <div>
+                  <strong>Patrimoine UNESCO</strong>
+                  <p>Inscrit au Patrimoine Immatériel de l'Humanité depuis 2008.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vodoun -->
+        <div class="spirit-panel spirit-vodoun reveal-right">
+          <div class="spirit-header">
+            <div class="spirit-symbol">🌀</div>
+            <h3>Le Vodoun</h3>
+            <p class="spirit-subtitle">Force Cosmique et Présence Sacrée</p>
+          </div>
+          <div class="spirit-body">
+            <p>
+              Le Vodoun est une philosophie de vie, une religion cosmique qui unit
+              les vivants, les morts et les forces de la nature. Porto-Novo abrite
+              de nombreuses <strong>places sacrées Vodoun</strong>, temples à ciel ouvert.
+            </p>
+            <div class="spirit-items">
+              <div class="spirit-item">
+                <span class="si-icon">🏛</span>
+                <div>
+                  <strong>Les Places Vodoun</strong>
+                  <p>Espaces sacrés ornés de symboles ésotériques, d'arbres sacrés et d'autels de prières.</p>
+                </div>
+              </div>
+              <div class="spirit-item">
+                <span class="si-icon">⚒</span>
+                <div>
+                  <strong>Dans l'Artisanat</strong>
+                  <p>Fétiches forgés, poteries rituelles, sculptures sacrées — chaque objet est une incarnation du divin.</p>
+                </div>
+              </div>
+              <div class="spirit-item">
+                <span class="si-icon">🌍</span>
+                <div>
+                  <strong>Diaspora Mondiale</strong>
+                  <p>Le Vodoun a essaimé jusqu'en Haïti, au Brésil et en Louisiane à travers l'histoire.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Places Vodoun -->
+      <div class="places-grid reveal-up">
+        <div class="places-title">
+          <h3>Pratiques & Cérémonies</h3>
+        </div>
+        <div class="places-cards">
+          <div class="place-card">
+            <span class="place-num">01</span>
+            <h4>Places Vodoun</h4>
+            <p>Espaces sacrés à ciel ouvert, lieux de prières, d'offrandes et de communion avec les esprits ancestraux.</p>
+          </div>
+          <div class="place-card">
+            <span class="place-num">02</span>
+            <h4>Artisanat Rituélique</h4>
+            <p>La forge produit les clés et couteaux sacrés. La poterie crée les récipients des libations et offrandes.</p>
+          </div>
+          <div class="place-card">
+            <span class="place-num">03</span>
+            <h4>Zangbeto & Initiations</h4>
+            <p>Danses des Zangbeto, processions des Vodounssi initiées, fêtes de l'igname et rituels de guérison.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 4 — JARDIN DES PLANTES (JPN)
+  ══════════════════════════════════════ -->
+  <section id="jpn" class="section section-forest">
+    <div class="forest-particles" id="forestParticles"></div>
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">🌿 Nature Sacrée</span>
+        <h2 class="section-title">Jardin des Plantes<br><em>et de la Nature</em></h2>
+        <div class="title-divider jade"></div>
+        <p class="section-lead">
+          Héritier de l'ancienne forêt sacrée <strong>Miganzun</strong>, le Jardin des Plantes
+          de Porto-Novo est un sanctuaire de biodiversité tropicale au cœur de la ville.
+        </p>
+      </div>
+
+      <div class="jpn-layout">
+        <div class="jpn-history reveal-left">
+          <div class="jpn-history-card">
+            <div class="jpn-badge">📜 Histoire</div>
+            <h3>De Miganzun au JPN</h3>
+            <p>
+              Le Jardin des Plantes occupe l'emplacement de l'ancienne <strong>forêt sacrée
+              du Migan (Miganzun)</strong>. Le Migan était le Premier Ministre du royaume
+              de Porto-Novo, gardien de la justice royale.
+            </p>
+            <p>
+              Sa forêt était un espace inviolable — refuge des esprits et lieu d'exécution
+              des sentences royales. Transformé à l'époque coloniale, le JPN a conservé
+              l'âme mystérieuse de Miganzun.
+            </p>
+            <div class="jpn-facts">
+              <div class="jpn-fact">
+                <span class="jpn-fact-icon">🌳</span>
+                <span><strong>4 hectares</strong> de nature préservée</span>
+              </div>
+              <div class="jpn-fact">
+                <span class="jpn-fact-icon">📍</span>
+                <span>En plein centre de Porto-Novo</span>
+              </div>
+              <div class="jpn-fact">
+                <span class="jpn-fact-icon">🔬</span>
+                <span>Centre de recherche botanique</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="jpn-biodiv reveal-right">
+          <h3 class="biodiv-title">🌿 Biodiversité & Calme</h3>
+          <div class="biodiv-items">
+            <div class="biodiv-item">
+              <div class="biodiv-icon">🌳</div>
+              <div class="biodiv-content">
+                <h4>Espèces végétales rares</h4>
+                <p>Centaines d'espèces tropicales répertoriées, certaines endémiques au Golfe de Guinée.</p>
+              </div>
+            </div>
+            <div class="biodiv-item">
+              <div class="biodiv-icon">🦋</div>
+              <div class="biodiv-content">
+                <h4>Faune locale préservée</h4>
+                <p>Papillons, oiseaux et reptiles endémiques trouvent refuge dans ce havre de paix urbain.</p>
+              </div>
+            </div>
+            <div class="biodiv-item">
+              <div class="biodiv-icon">🌿</div>
+              <div class="biodiv-content">
+                <h4>Plantes médicinales</h4>
+                <p>Pharmacopée traditionnelle encore utilisée par les guérisseurs et herboristes locaux.</p>
+              </div>
+            </div>
+            <div class="biodiv-item">
+              <div class="biodiv-icon">🌊</div>
+              <div class="biodiv-content">
+                <h4>Micro-climat apaisant</h4>
+                <p>Une fraîcheur naturelle et un calme remarquable en plein cœur de la ville animée.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 5 — ARBRES SACRÉS
+  ══════════════════════════════════════ -->
+  <section id="arbres" class="section">
+    <div class="section-bg-pattern dark"></div>
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">🌳 Symbolisme</span>
+        <h2 class="section-title">Les Arbres<br><em>Sacrés</em></h2>
+        <div class="title-divider"></div>
+        <p class="section-lead">
+          Dans la cosmogonie de Porto-Novo, les arbres sont des êtres divins — témoins
+          des pactes entre les hommes et les dieux, gardiens de la justice et de l'équilibre du monde.
+        </p>
+      </div>
+
+      <div class="trees-split">
+        <!-- Iroko -->
+        <div class="tree-card iroko reveal-left">
+          <div class="tree-visual">
+            <div class="tree-emoji-wrap">
+              <span>🌳</span>
+            </div>
+            <div class="tree-rings"></div>
+          </div>
+          <div class="tree-info">
+            <div class="tree-badge">Chlorophora excelsa</div>
+            <h3>L'Iroko</h3>
+            <p class="tree-subtitle">L'Arbre des Rois et de la Justice</p>
+            <div class="tree-divider"></div>
+            <p>
+              L'Iroko est l'arbre sacré par excellence en Afrique de l'Ouest. À Porto-Novo,
+              il symbolise la puissance royale et l'autorité ancestrale.
+            </p>
+            <div class="tree-attributes">
+              <div class="tree-attr">
+                <span class="attr-icon">⚖</span>
+                <div>
+                  <strong>Justice Royale</strong>
+                  <p>Sous l'Iroko se tenaient les grands procès du royaume — sa présence garantissait l'impartialité du jugement.</p>
+                </div>
+              </div>
+              <div class="tree-attr">
+                <span class="attr-icon">♾</span>
+                <div>
+                  <strong>Immortalité</strong>
+                  <p>Son bois imputrescible symbolise l'éternité des lignées royales et la permanence du pouvoir.</p>
+                </div>
+              </div>
+              <div class="tree-attr">
+                <span class="attr-icon">🔮</span>
+                <div>
+                  <strong>Présence Divine</strong>
+                  <p>Les esprits ancestraux élisent domicile dans ses branches — l'Iroko est un pont entre les mondes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colatier -->
+        <div class="tree-card colatier reveal-right">
+          <div class="tree-visual">
+            <div class="tree-emoji-wrap">
+              <span>🌿</span>
+            </div>
+            <div class="tree-rings orange"></div>
+          </div>
+          <div class="tree-info">
+            <div class="tree-badge orange">Cola nitida</div>
+            <h3>Le Colatier</h3>
+            <p class="tree-subtitle">Arbre de la Paix et de l'Alliance</p>
+            <div class="tree-divider orange"></div>
+            <p>
+              La noix de cola est l'offrande première dans toutes les cérémonies de Porto-Novo.
+              Offrir une noix de cola, c'est offrir la paix et sceller une alliance.
+            </p>
+            <div class="tree-attributes">
+              <div class="tree-attr">
+                <span class="attr-icon">🤝</span>
+                <div>
+                  <strong>Alliance & Paix</strong>
+                  <p>La cola scelle les pactes, les mariages et les réconciliations. Présente dans tous les rituels Fâ et Vodoun.</p>
+                </div>
+              </div>
+              <div class="tree-attr">
+                <span class="attr-icon">🙏</span>
+                <div>
+                  <strong>Offrande Sacrée</strong>
+                  <p>Première offrande lors de toute cérémonie — sans cola, aucun rite ne peut commencer.</p>
+                </div>
+              </div>
+              <div class="tree-attr">
+                <span class="attr-icon">💊</span>
+                <div>
+                  <strong>Médecine Traditionnelle</strong>
+                  <p>Ses propriétés stimulantes sont utilisées dans la pharmacopée et la guérison traditionnelle.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 6 — CONCLUSION
+  ══════════════════════════════════════ -->
+  <section id="conclusion" class="section section-conclusion">
+    <div class="conclusion-bg"></div>
+    <div class="container">
+      <div class="conclusion-inner reveal-up">
+        <span class="section-label light">🏛 Conclusion</span>
+        <h2 class="conclusion-title">
+          Porto-Novo —<br>
+          <em>Cœur Battant de<br>l'Identité Béninoise</em>
+        </h2>
+        <div class="title-divider gold centered"></div>
+        <p class="conclusion-text">
+          Porto-Novo est bien plus qu'une capitale administrative — elle est le creuset où se forgent
+          les identités, où le passé dialogue avec le présent et où la spiritualité infuse chaque
+          geste du quotidien.
+        </p>
+        <p class="conclusion-text">
+          Le <strong>Village de l'Artisan</strong> préserve des savoir-faire millénaires transmis
+          dans le respect du Fâ et du Vodoun. Le <strong>Jardin des Plantes et de la Nature</strong>,
+          héritier de la forêt sacrée Miganzun, offre un sanctuaire où les arbres sacrés continuent
+          de témoigner du lien profond entre l'homme et la nature.
+        </p>
+
+        <div class="conclusion-pillars">
+          <div class="pillar reveal-up delay-1">
+            <div class="pillar-icon">⚒</div>
+            <span>Artisanat</span>
+          </div>
+          <div class="pillar-connector">·</div>
+          <div class="pillar reveal-up delay-2">
+            <div class="pillar-icon">🔮</div>
+            <span>Fâ & Vodoun</span>
+          </div>
+          <div class="pillar-connector">·</div>
+          <div class="pillar reveal-up delay-3">
+            <div class="pillar-icon">🌿</div>
+            <span>Nature</span>
+          </div>
+          <div class="pillar-connector">·</div>
+          <div class="pillar reveal-up delay-4">
+            <div class="pillar-icon">👑</div>
+            <span>Royauté</span>
+          </div>
+        </div>
+
+        <div class="final-quote">
+          <p>
+            ✨ Ensemble, ces lieux font de Porto-Novo une ville unique, où chaque histoire
+            appartient à toute l'humanité.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span>🏛</span>
+        <span>Hogbonou · Porto-Novo</span>
+      </div>
+      <p class="footer-tagline">Entre Traditions Ancestrales et Écrin de Nature · République du Bénin</p>
+      <div class="footer-tags">
+        <span>Village de l'Artisan</span>
+        <span>·</span>
+        <span>Fâ & Vodoun</span>
+        <span>·</span>
+        <span>Jardin des Plantes</span>
+        <span>·</span>
+        <span>Iroko · Colatier</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
